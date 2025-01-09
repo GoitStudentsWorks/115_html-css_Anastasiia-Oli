@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>WatchCharm</title>
+    <!--Normalizer-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -12,11 +17,19 @@
 
     <main>
       <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <load src="./partials/hero.html"></load>
+      <load src="./partials/about.html"></load>
+      <load src="./partials/catalog.html"></load>
+      <load src="./partials/advertisement.html"></load>
+      <load src="./partials/sale.html"></load>
+      <load src="./partials/reviews.html"></load>
+      <load src="./partials/contact.html"></load>
     </main>
 
     <load src="./partials/footer.html" />
+
+    <!-- Modal menu -->
+    <load src="./partials/menu.html"></load>
 
     <script type="module" src="./main.js"></script>
   </body>
