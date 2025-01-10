@@ -1,0 +1,101 @@
+.catalog-section-title {
+  color: rgba(12, 12, 12, 1);
+  font-family: Gilroy, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.catalog-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    row-gap: 23px;
+    column-gap: 32px;
+    flex-basis: calc((100% - 46px) / 3);
+  }
+}
+
+.catalog-card {
+  width: 335px;
+  height: 364px;
+  background-color: rgba(243, 243, 243, 1);
+  text-align: center;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-card {
+    width: 368px;
+    height: 414px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog-card {
+    flex-basis: calc((100% - 46px) / 3);
+  }
+}
+.catalog-watch-image {
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.catalog-item-info {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+
+.catalog-item-name {
+  color: rgba(12, 12, 12, 1);
+  font-family: Gilroy, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.catlog-item-price {
+  color: rgba(12, 12, 12, 0.5);
+  font-family: Gilroy, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
