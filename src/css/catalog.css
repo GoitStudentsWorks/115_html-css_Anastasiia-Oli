@@ -1,12 +1,27 @@
 .catalog-section-title {
   color: rgba(12, 12, 12, 1);
-  font-family: Gilroy, sans-serif;
-  font-size: 48px;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 32px;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
   text-align: left;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-section-title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog-section-title {
+    margin-left: 65px;
+  }
 }
 
 .catalog-cards {
@@ -15,6 +30,7 @@
   justify-content: center;
   align-items: center;
   list-style-type: none;
+  box-sizing: border-box;
   gap: 20px;
   padding: 0;
 }
@@ -32,20 +48,18 @@
 @media screen and (min-width: 1200px) {
   .catalog-cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     list-style-type: none;
+    padding: 0;
     row-gap: 23px;
     column-gap: 32px;
-    flex-basis: calc((100% - 46px) / 3);
   }
 }
 
 .catalog-card {
-  width: 335px;
+  width: 100%;
   height: 364px;
+  box-sizing: border-box;
   background-color: rgba(243, 243, 243, 1);
   text-align: center;
   border: 1px solid rgba(12, 12, 12, 0.05);
@@ -54,19 +68,38 @@
 
 @media screen and (min-width: 768px) {
   .catalog-card {
-    width: 368px;
+    max-width: 344px;
     height: 414px;
+    width: calc(50% - 16px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .catalog-card {
-    flex-basis: calc((100% - 46px) / 3);
+    height: 414px;
+    width: calc((100% - 46px) / 3);
   }
 }
+
 .catalog-watch-image {
   margin: 0 auto;
-  margin-top: 24px;
+  margin-top: 42px;
+  width: 208px;
+  height: 226px;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-watch-image {
+    margin-top: 34px;
+    width: 268px;
+    height: 292px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog-watch-image {
+    width: 292px;
+  }
 }
 
 .catalog-item-info {
@@ -79,15 +112,22 @@
 
 .catalog-item-name {
   color: rgba(12, 12, 12, 1);
-  font-family: Gilroy, sans-serif;
-  font-size: 20px;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-item-name {
+    font-size: 20px;
+  }
 }
 
 .catlog-item-price {
@@ -98,4 +138,33 @@
   line-height: 1.3;
   letter-spacing: 0.02em;
   margin-bottom: 0;
+}
+
+.catalog-btn {
+  display: block;
+  margin: auto;
+  font-family: 'Gilroy', sans-serif;
+  color: rgba(251, 251, 251, 1);
+  background-color: rgba(51, 80, 233, 1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  border: none;
+  border-radius: 16px;
+  padding: 15px 44px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalog-btn:hover,
+.catalog-btn:focus {
+  background-color: rgba(31, 60, 212, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-btn {
+    display: none;
+  }
 }
