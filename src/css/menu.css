@@ -1,5 +1,5 @@
 .menu-mob-tab {
-  background-image: url(../img/menu/menu-bg-mobile@1.jpg);
+  background-image: url(/img/menu/menu-bg-mobile@1.jpg);
   background-size: cover;
   position: fixed;
   top: 0;
@@ -14,20 +14,20 @@
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .menu-mob-tab {
-    background-image: url(../img/menu/menu-bg-mobile@2.jpg);
+    background-image: url(/img/menu/menu-bg-mobile@2.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .menu-mob-tab {
     width: 330px;
-    background-image: url(../img/menu/menu-bg-tablet@1.jpg);
+    background-image: url(/img/menu/menu-bg-tablet@1.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .menu-mob-tab {
-    background-image: url(../img/menu/menu-bg-tablet@2.jpg);
+    background-image: url(/img/menu/menu-bg-tablet@2.jpg);
   }
 }
 
