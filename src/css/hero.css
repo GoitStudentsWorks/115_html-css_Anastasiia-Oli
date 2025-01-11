@@ -41,28 +41,30 @@
 
 .hero-people-ul {
     display: flex;
+    position: relative;
 }
 
 .hero-people-ul-li {
+    position: absolute;
     width: 44px;
     height: 44px;
     border: 2px solid #FBFBFB;
     border-radius: 50%;
 
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
     background-color: #F3F3F3;
         
     overflow: hidden;
 }
 
 .hero-people-ul-li.relative {
-    position: relative;
-    right: 12px;
+    position: absolute;
+    left: 32px;
 }
 
 .hero-people-ul-li.relative-two {
-    position: relative;
-    right: 20px;
+    position: absolute;
+    left: 64px;
 }
 
 .hero-scroll-down {
@@ -79,13 +81,17 @@
     color: #0C0C0C; 
 }
 
+.hero-scroll-down:hover,
+.hero-scroll-down:focus {
+    color: #3350E9;
+}
+
 .watch-hero {
     margin-top: 28px;
 
-    border: 1px solid #000;
-        border-radius: 30px;
-        width: 335px;
-        height: 366px;
+    border-radius: 30px;
+    width: 335px;
+    height: 366px;
         
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: rgba(12, 12, 12, 0.2); 
@@ -97,7 +103,6 @@
     .hero {
         padding-top: 80px;
         margin-bottom: 40px;
-        position: relative;
     }
 
     .hero-container {
@@ -136,18 +141,17 @@
   }
 
   .hero-people-ul-li {
-    position: absolute;
     width: 56px;
     height: 56px;
 
   }
 
   .hero-people-ul-li.relative {
-      left: 40px;
+      left: 41px;
   }
 
   .hero-people-ul-li.relative-two {
-      left: 23px;
+      left: 80px;
   }
 
   .hero-scroll-down {
@@ -205,7 +209,7 @@
     }
 
     .hero-people-ul-li.relative-two {
-        left: 26px;
+        left: 86px;
     }
 
         .hero-scroll-down {
