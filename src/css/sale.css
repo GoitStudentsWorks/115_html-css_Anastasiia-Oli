@@ -93,7 +93,7 @@
 .watch-item-tag {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.5);
     margin-bottom: 20px;
@@ -127,7 +127,7 @@
 .watch-description {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.7);
     margin-bottom: 28px;
@@ -147,14 +147,14 @@
     justify-content: center;
     align-items: center;
     height: 32px;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
 
 .watch-tags-item:hover,
 .watch-tags-item:active,
 .watch-tags-item:focus-within {
-    background: #1f3cd4;
+    background-color: #1f3cd4;
 }
 
 .watch-tags-link {
