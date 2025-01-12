@@ -2,7 +2,6 @@
   position: relative; 
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 0;
 }
 
 .reviews-title {
@@ -11,7 +10,7 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 
@@ -22,8 +21,6 @@
   overflow-x: auto;
   scroll-behavior: auto;
   transition: transform 0.5s ease;
-  padding: 0; 
-  margin: 0;  
 }
 
 .reviews-item {
@@ -66,6 +63,7 @@
 
   .reviews-title {
     font-size: 48px;
+    margin-bottom: 40px;
   }
 
   .reviews-list { 
@@ -83,12 +81,12 @@
 
   .reviews-item-text {
     font-size: 16px;
-    line-height: 1.29;
+    line-height: 1.25;
   }
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
   .reviews-list { 
     gap: 20px;
