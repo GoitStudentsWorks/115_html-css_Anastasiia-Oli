@@ -1,5 +1,4 @@
 
-
 .hero {
     margin-top: 60px;
     margin-bottom: 30px;
@@ -31,7 +30,6 @@
 .hero-p {
     font-weight: 500;
     font-size: 14px;
-    align-items: flex-end;
     
     line-height: 1.29;
     letter-spacing: -0.02em;
@@ -40,22 +38,24 @@
 
 .hero-people {
     display: flex;
-    width: 335px;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
 }
 
 .hero-people-ul {
     display: flex;
-    position: relative;
+    
 }
 
 .hero-people-ul-li {
     position: absolute;
+    left: 0;
     width: 44px;
     height: 44px;
     border: 2px solid #FBFBFB;
     border-radius: 50%;
+
     background-color: #F3F3F3;
         
     overflow: hidden;
@@ -88,7 +88,6 @@
 .hero-scroll-down:hover,
 .hero-scroll-down:focus {
     color: #3350E9;
-    
 }
 
 .hero-watch {
@@ -161,11 +160,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .hero {
-        margin-bottom: 50px;
-    }
-
-    .hero-container {
+       .hero-container {
         gap: 408px;
     }
 
