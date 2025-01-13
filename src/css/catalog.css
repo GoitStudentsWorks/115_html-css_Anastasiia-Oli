@@ -61,7 +61,6 @@
 
 @media screen and (min-width: 1280px) {
   .catalog-cards {
-    justify-content: space-between;
     row-gap: 32px;
     column-gap: 23px;
   }
@@ -131,8 +130,6 @@
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin-left: 32px;
-  margin-right: 32px;
   margin-bottom: 24px;
 }
 
