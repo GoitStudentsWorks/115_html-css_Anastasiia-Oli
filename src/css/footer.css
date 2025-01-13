@@ -41,6 +41,12 @@
     opacity: 0.8;
 }
 
+.footer-icon:focus,
+.footer-icon:hover {
+    opacity: 0;
+
+}
+
 .footer-tel {
     display: block;
     margin-bottom: 40px;
@@ -84,9 +90,6 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
     gap: 16px;
 }
 
@@ -200,10 +203,14 @@
      display: flex;
      justify-content: space-between;
     }
+
+    .footer-policy-ul {
+        gap: 20px;
+    }
     
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .footer {
         padding-top: 50px;
     }
