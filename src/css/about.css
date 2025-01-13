@@ -22,7 +22,7 @@
 .about-text {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.7);
 }
@@ -40,7 +40,7 @@
     border: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 1.29;
     text-align: center;
     color: #fbfbfb;
     display: block;
@@ -53,15 +53,12 @@
     background-color:#1f3cd4;
 }
 .about-img {
-    
-    border-radius: 30px;
+    border-radius: 50px;
 }
 @media (min-width: 768px) {
     .about-title {
-            font-weight: 600;
             font-size: 48px;
             line-height: 0.92;
-            color: #0c0c0c;
             margin-bottom: 40px;
         }
         .about-text{
@@ -73,6 +70,8 @@
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 80px;
+        margin-bottom: 40px;
+        border-radius: 50px;
     }
         .about-text.second {
             margin-bottom: 60px;
@@ -97,6 +96,7 @@
     .about-us {
         max-width: 580px;
         max-height: 532px;
+        margin: 0;
     }
     .about-text {
         font-size: 16px;
