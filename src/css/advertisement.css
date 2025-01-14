@@ -13,6 +13,9 @@
 .my-section {
   padding: 60px 28px;
   background-image: url(/img/advertisement/fon-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #0c0c0c;
   border-radius: 30px;
   width: 335px;
