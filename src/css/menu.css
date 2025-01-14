@@ -23,7 +23,7 @@
   z-index: 999;
   width: 200px;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
