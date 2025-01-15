@@ -55,3 +55,22 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveLink);
   updateActiveLink(); // Чтобы сразу обновить классы при загрузке
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('.header');
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      // Скроллим вниз — скрыть хедер
+      header.classList.add('hidden');
+    } else {
+      // Скроллим вверх — показать хедер
+      header.classList.remove('hidden');
+    }
+
+    lastScrollY = currentScrollY;
+  });
+});
